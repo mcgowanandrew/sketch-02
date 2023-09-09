@@ -26,7 +26,7 @@ const sketch = () => {
     const ctx = context;
     ctx.fillStyle = params.bgColor;
     ctx.fillRect(0, 0, width, height);
-    
+
     const cols = params.cols;
     const rows = params.rows;
     const numCells = cols * rows;
@@ -81,5 +81,6 @@ const createPane = () => {
   folder2.addInput(params, 'dotColor', { picker: 'inline', expanded: false });
 
 };
+
 createPane();
 canvasSketch(sketch, settings);
