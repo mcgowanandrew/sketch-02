@@ -85,5 +85,3 @@ const createPane = () => {
 };
 createPane();
 canvasSketch(sketch, settings);
-
-//
