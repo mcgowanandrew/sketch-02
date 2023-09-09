@@ -69,16 +69,15 @@ const sketch = () => {
 
 const createPane = () => {
   const pane = new Tweakpane.Pane();
-  let folder;
 
-  folder = pane.addFolder({ title: 'Grid' });
+  const folder = pane.addFolder({ title: 'Grid' });
   folder.addInput(params, 'cols', { min: 20, max: 100, step: 1 });
   folder.addInput(params, 'rows', { min: 20, max: 100, step: 1 });
   folder.addInput(params, 'scaleMin', { min: 1, max: 25 });
   folder.addInput(params, 'scaleMax', { min: 1, max: 100 });
   folder.addInput(params, 'bgColor', { picker: 'inline', expanded: false });
 
-  folder2 = pane.addFolder({ title: 'Noise' });
+  const folder2 = pane.addFolder({ title: 'Noise' });
   folder2.addInput(params, 'freq', { min: -0.01, max: 0.01 });
   folder2.addInput(params, 'amp', { min: 0, max: 5 });
   folder2.addInput(params, 'dotColor', { picker: 'inline', expanded: false });
