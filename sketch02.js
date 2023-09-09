@@ -26,6 +26,7 @@ const sketch = () => {
     const ctx = context;
     ctx.fillStyle = params.bgColor;
     ctx.fillRect(0, 0, width, height);
+    
     const cols = params.cols;
     const rows = params.rows;
     const numCells = cols * rows;
@@ -58,10 +59,7 @@ const sketch = () => {
       ctx.strokeStyle = params.dotColor
       ctx.beginPath();
       ctx.arc(0, 0, 0.01, 0, Math.PI * 2);
-
-
       ctx.stroke();
-
       ctx.restore();
     }
   };
